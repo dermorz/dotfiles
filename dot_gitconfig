@@ -1,0 +1,31 @@
+# put this in ~/gitconfig.d/identity
+# [user]
+#   name = Moritz Bracht
+#   email = moritz.bracht@example.org
+#   signingkey = AB123456
+[include]
+	path = ~/.gitconfig.d/identity
+[commit]
+	gpgSign = true
+[push]
+	default = current
+	followTags = true
+[alias]
+	co = checkout
+	ci = commit -S -v
+	undo = reset --soft 'HEAD~'
+	m = merge -S
+	fixup = "!f(){ git reset --soft HEAD~${1} && git commit --amend -C HEAD; };f"
+[merge]
+	ff = false
+[pull]
+	rebase = true
+[core]
+	excludesfile = ~/.gitignore_global
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[gpg]
+	program = gpg2
+[init]
+	defaultBranch = main
