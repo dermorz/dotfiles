@@ -1,0 +1,75 @@
+{
+  "languageserver":{
+      "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  },
+  "python.jediEnabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pylamaEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "flake8",
+  "python.autoComplete.showAdvancedMembers": false,
+  "python.analysis.disabled": [
+    "inherit-non-class"
+  ],
+  "go.goplsOptions": {
+    "env": {
+        "GOFLAGS": "-tags=test,unit,integration,contract"
+    },
+    "completeUnimported": true,
+    "staticcheck": true,
+    "diagnostics": true,
+    "analyses": {
+      "unreachable": true,
+      "composite": false,
+      "simplifycompositelit": true
+    }
+  },
+  "cSpell.language": "en,de",
+  "cSpellExt.enableDictionaries": ["german"],
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "de",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vim",
+    "yaml",
+    "yml"
+  ]
+
+}
