@@ -3,6 +3,9 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export PAGER='less'
 
+# Terminal
+export TERMINAL='alacritty'
+
 # Language
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
