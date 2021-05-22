@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/morz/.config/chezmoi'
-let g:netrw_dirhist_2='/home/morz/gitconfig.d/identity'
-let g:netrw_dirhist_1='/home/morz/.config/i3'
