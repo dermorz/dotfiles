@@ -31,3 +31,6 @@ nmap <leader>vs :so $MYVIMRC<cr>
 " Copy/Paste with system clipboard
 map cv "+p
 map cp "+y
+
+" :help navigation
+nnoremap t <C-]>
