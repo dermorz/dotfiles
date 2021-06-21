@@ -1,6 +1,13 @@
 {
   "languageserver":{
-      "terraform": {
+    "golangci-lint-languageserver": {
+      "command": "golangci-lint-langserver",
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "command": ["golangci-lint", "run", "--out-format", "json"]
+      }
+    },
+    "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],
       "filetypes": [
@@ -21,17 +28,8 @@
     "inherit-non-class"
   ],
   "go.goplsOptions": {
-    "env": {
-        "GOFLAGS": "-tags=test,unit,integration,contract"
-    },
-    "completeUnimported": true,
-    "staticcheck": true,
-    "diagnostics": true,
-    "analyses": {
-      "unreachable": true,
-      "composite": false,
-      "simplifycompositelit": true
-    }
+    "buildFlags": "-tags=test,unit,integration,contract",
+    "completeUnimported": true
   },
   "cSpell.language": "en,de",
   "cSpellExt.enableDictionaries": ["german"],
