@@ -23,7 +23,7 @@ path=(
 )
 cdpath=(
   $HOME/go
-  $HOME/Code
+  $HOME/code
 )
 
 
