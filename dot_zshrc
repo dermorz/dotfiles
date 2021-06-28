@@ -24,6 +24,7 @@ zplug "plugins/docker", from:oh-my-zsh
 
 zplug "skywind3000/z.lua"
 zplug "lukechilds/zsh-nvm"
+zplug "zsh-vi-more/evil-registers"
 
 zplug "${HOME}/.zsettings", from:local, use:"*.zsh"
 
