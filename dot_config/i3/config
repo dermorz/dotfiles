@@ -112,6 +112,8 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+bindsym $mod+Tab workspace back_and_forth
+
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -186,7 +188,18 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
 bindsym $mod+r mode "resize"
+
+set $mode_output [i] Internal [e] External [d] Dual
+mode "$mode_output" {
+        bindsym i exec --no-startup-id xrandr --output eDP --primary --auto --output DisplayPort-0 --off, mode "default"
+        bindsym e exec --no-startup-id xrandr --output DisplayPort-0 --primary --auto --output eDP --off, mode "default"
+        bindsym d exec --no-startup-id xrandr --output DisplayPort-0 --left-of eDP --primary --auto --output eDP --auto, mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+o mode "default"
+}
+bindsym $mod+o mode "$mode_output"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
