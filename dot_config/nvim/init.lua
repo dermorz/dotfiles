@@ -1,6 +1,10 @@
 require('options')
+
 require('packages')
+
 require('mappings')
+
+require('tools')
 
 -- plugins
 require('plugins.gruvbox-material')
