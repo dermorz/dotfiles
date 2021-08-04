@@ -205,7 +205,7 @@ set $mode_output [i] Internal [e] External [d] Dual
 mode "$mode_output" {
         bindsym i exec --no-startup-id xrandr --output eDP --primary --auto --output DisplayPort-0 --off, mode "default"
         bindsym e exec --no-startup-id xrandr --output DisplayPort-0 --primary --auto --output eDP --off, mode "default"
-        bindsym d exec --no-startup-id xrandr --output DisplayPort-0 --left-of eDP --primary --auto --output eDP --auto, mode "default"
+        bindsym d exec --no-startup-id xrandr --output DisplayPort-0 --primary --auto --output eDP --auto --pos 3840x1000, mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
