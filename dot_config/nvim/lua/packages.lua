@@ -37,7 +37,7 @@ require "paq" {
     'neovim/nvim-lspconfig';
 
     -- go
-    -- 'zchee/nvim-go';
+    'ray-x/go.nvim';
 
     -- completion
     'hrsh7th/nvim-compe';
