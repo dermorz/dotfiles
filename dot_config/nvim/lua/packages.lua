@@ -48,4 +48,7 @@ require "paq" {
     'tpope/vim-sleuth';
     'tpope/vim-surround';
     'christoomey/vim-sort-motion';
+
+    -- vimwiki
+    'vimwiki/vimwiki';
 }
