@@ -158,7 +158,7 @@ mode "$mode_i3" {
 bindsym $mod+Shift+i mode "$mode_i3"
 
 # system
-set $locker i3lock && sleep 1
+set $locker i3lock -c 000000 && sleep 1
 set $mode_system [l] Lock [e] Logout (Exit) [s] Suspend [h] Hibernate [r] Reboot [Shift+s] Shutdown
 mode "$mode_system" {
         bindsym l exec --no-startup-id $locker, mode "default" 
