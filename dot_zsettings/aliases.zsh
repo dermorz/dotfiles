@@ -16,3 +16,5 @@ alias task="timew summary from 2020-01-01 - now :id"
 alias track="timew track"
 alias day="timew day"
 alias week="timew week"
+
+alias luamake=/home/morz/code/lua-language-server/3rd/luamake/luamake

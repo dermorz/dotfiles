@@ -1,4 +1,7 @@
 export ZPLUG_HOME=~/.zplug
+if [[ ! -d $ZPLUG_HOME ]]; then
+  git clone https://github.com/zplug/zplug $ZPLUG_HOME
+fi
 source $ZPLUG_HOME/init.zsh
 
 zstyle ':prezto:*:*' case-sensitive 'yes'
@@ -13,26 +16,23 @@ zplug "modules/editor", from:prezto
 zplug "modules/history", from:prezto
 zplug "modules/directory", from:prezto
 zplug "modules/spectrum", from:prezto
-zplug "modules/completion", from:prezto
 zplug "modules/prompt", from:prezto
+zplug "modules/completion", from:prezto
 
 zplug "modules/archive", from:prezto
 zplug "modules/git", from:prezto
 zplug "modules/python", from:prezto
 zplug "modules/syntax-highlighting", from:prezto
+
 zplug "plugins/docker", from:oh-my-zsh
-
-zplug "skywind3000/z.lua"
-zplug "lukechilds/zsh-nvm"
 zplug "zsh-vi-more/evil-registers"
-
-zplug "${HOME}/.zsettings", from:local, use:"*.zsh"
+zplug "${HOME}/.zsettings", from:local
 
 if ! zplug check --verbose; then
-	printf "Install? [y/N]: "
-	if read -q; then
-		echo; zplug install
-	fi
+  printf "Install zplug plugins? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
 fi
 
 zplug load
