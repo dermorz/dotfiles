@@ -1216,14 +1216,14 @@ c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', 'nvim', '{file}
 ## font setting, it's replaced with the fonts listed here. If set to an
 ## empty value, a system-specific monospace default is used.
 ## Type: List of Font, or Font
-# c.fonts.default_family = []
+c.fonts.default_family = ['FiraCode Nerd Font']
 
 ## Default font size to use. Whenever "default_size" is used in a font
 ## setting, it's replaced with the size listed here. Valid values are
 ## either a float value with a "pt" suffix, or an integer value with a
 ## "px" suffix.
 ## Type: String
-# c.fonts.default_size = '10pt'
+c.fonts.default_size = '13pt'
 
 ## Font used for the downloadbar.
 ## Type: Font
@@ -1275,7 +1275,7 @@ c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', 'nvim', '{file}
 
 ## Font family for fixed fonts.
 ## Type: FontFamily
-# c.fonts.web.family.fixed = ''
+c.fonts.web.family.fixed = 'FiraCode Nerd Font'
 
 ## Font family for sans-serif fonts.
 ## Type: FontFamily
