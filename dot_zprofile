@@ -18,8 +18,9 @@ path=(
   $HOME/{,.}bin
   $HOME/.local/bin
   /usr/local/{,s}bin
-  $path
+  $HOME/.tfenv/bin
   $GOBIN
+  $path
 )
 cdpath=(
   $HOME/go
