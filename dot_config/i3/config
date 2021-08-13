@@ -192,6 +192,10 @@ mode "resize" {
         bindsym $mod+k move up
         bindsym $mod+l move right
 
+        # move workspaces to preferred outputs
+        bindsym $mod+Shift+h move workspace to output $external
+        bindsym $mod+Shift+l move workspace to output $internal
+
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
