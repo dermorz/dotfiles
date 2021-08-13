@@ -1,5 +1,6 @@
 alias vim='nvim -O'
 alias e='nvim -O'
+
 alias gl="git log --graph --pretty='%C(auto)%h%Creset %Cgreen[%cs]%C(auto)%d%Creset %s  %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias -g G='|grep '
 
@@ -16,5 +17,7 @@ alias task="timew summary from 2020-01-01 - now :id"
 alias track="timew track"
 alias day="timew day"
 alias week="timew week"
+
+alias open=xdg-open
 
 alias luamake=/home/morz/code/lua-language-server/3rd/luamake/luamake
