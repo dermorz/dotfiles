@@ -239,6 +239,8 @@ exec_always --no-startup-id $kill_redshift redshift -P
 exec_always --no-startup-id xset -dpms
 exec_always --no-startup-id xset s off
 
+exec --no-startup-id xsetroot -solid "#333333"
+
 # autostart
 set $polybar sleep 1; $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $polybar
