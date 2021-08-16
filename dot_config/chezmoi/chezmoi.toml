@@ -5,3 +5,6 @@
 [merge]
   command = "nvim"
   args = "-d"
+
+[git]
+  autoCommit = true
