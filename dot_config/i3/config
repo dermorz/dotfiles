@@ -141,6 +141,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws0
 
 # assign applications to preferred workspaces
 assign [class="Slack"] $ws0
+assign [class="TelegramDesktop"] $ws0
 
 # special window handling
 for_window [title="textfield editor"] floating enable
@@ -242,5 +243,5 @@ exec_always --no-startup-id xset s off
 exec --no-startup-id xsetroot -solid "#333333"
 
 # autostart
-set $polybar sleep 1; $HOME/.config/polybar/launch.sh
+set $polybar sleep 0.2; $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $polybar
