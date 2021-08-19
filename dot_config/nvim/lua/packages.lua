@@ -43,7 +43,6 @@ require "paq" {
     'hrsh7th/nvim-compe';
 
     -- vim stuff
-    'tversteeg/registers.nvim';
     'tpope/vim-commentary';
     'tpope/vim-repeat';
     'tpope/vim-sleuth';
