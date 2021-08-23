@@ -39,6 +39,9 @@ require "paq" {
     -- go
     'ray-x/go.nvim';
 
+    -- markdown
+    {'iamcco/markdown-preview.nvim', run = 'cd app &&  yarn install'};
+
     -- completion
     'hrsh7th/nvim-compe';
 
