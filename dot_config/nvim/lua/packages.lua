@@ -40,7 +40,7 @@ require "paq" {
     'ray-x/go.nvim';
 
     -- markdown
-    {'iamcco/markdown-preview.nvim', run = 'cd app &&  yarn install'};
+    {'iamcco/markdown-preview.nvim', run = ':call mkdp#util#install()'};
 
     -- completion
     'hrsh7th/nvim-compe';
