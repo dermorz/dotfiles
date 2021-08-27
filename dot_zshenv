@@ -9,5 +9,7 @@ export NVM_LAZY_LOAD=true
 
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
+export GO111MODULE="on"
+export GOPROXY="https://proxy.golang.org"
 
 export GPG_TTY=$(tty)
