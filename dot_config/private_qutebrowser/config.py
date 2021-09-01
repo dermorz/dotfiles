@@ -2034,7 +2034,7 @@ c.qt.highdpi = True
 
 ## Default zoom level.
 ## Type: Perc
-c.zoom.default = '125%'
+c.zoom.default = '150%'
 
 ## Available zoom levels.
 ## Type: List of Perc
