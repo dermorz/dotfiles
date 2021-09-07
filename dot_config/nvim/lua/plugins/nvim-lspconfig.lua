@@ -1,7 +1,21 @@
 local lsp = require 'lspconfig'
 
 -- Go
-lsp.gopls.setup{}
+local custom_attach = function(client)
+    require('compe_nvim_lsp').attach(client)
+    require('lsp-status').on_attach(client)
+end
+
+local capabilities = require('lsp-status').capabilities
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lsp.gopls.setup{
+    on_attach = custom_attach,
+    capabilities = capabilities,
+    init_options = {
+        usePlaceholders = true;
+    }
+}
 
 -- lua
 local sumneko_root_path = "/home/morz/code/lua-language-server"
