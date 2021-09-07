@@ -9,3 +9,5 @@ require 'compe'.setup {
         nvim_lua = true;
     }
 }
+
+vim.api.nvim_set_keymap("i", "<C-d>f", "compe#scroll({ 'delta': -4 })", { expr = true, noremap = true, silent = true, })
