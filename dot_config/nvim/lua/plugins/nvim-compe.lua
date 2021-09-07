@@ -1,3 +1,4 @@
+-- compe
 require 'compe'.setup {
     source = {
         path = true;
@@ -30,6 +31,7 @@ if (status) then return lib end
     return nil
 end
 
+-- luasnip
 local luasnip = prequire('luasnip')
 
 local t = function(str)
