@@ -10,4 +10,11 @@ require 'compe'.setup {
     }
 }
 
-vim.api.nvim_set_keymap("i", "<C-d>f", "compe#scroll({ 'delta': -4 })", { expr = true, noremap = true, silent = true, })
+
+
+function M.set_keymap(mode, from, to)
+    local opts = { noremap = true, silent = true }
+    vim.api.nvim_set_keymap(mode, from, to, opts)
+    vim.api.nvim_set_keymap("i", "<C-d>f", "compe#scroll({ 'delta': -4 })", { expr = true, noremap = true, silent = true, })
+end
+
