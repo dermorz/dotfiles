@@ -2,7 +2,7 @@ local lsp = require 'lspconfig'
 
 -- Go
 local custom_attach = function(client)
-    require('compe_nvim_lsp').attach(client)
+    require('compe_nvim_lsp').attach()
     require('lsp-status').on_attach(client)
 end
 
