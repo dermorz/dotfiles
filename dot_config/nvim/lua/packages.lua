@@ -45,7 +45,7 @@ require "paq" {
 
     -- completion
     'hrsh7th/nvim-compe';
-    'SirVer/ultisnips';
+    'L3MON4D3/LuaSnip';
 
     -- vim stuff
     'tpope/vim-commentary';
