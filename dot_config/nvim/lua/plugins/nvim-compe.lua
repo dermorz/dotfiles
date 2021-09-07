@@ -76,4 +76,4 @@ vim.api.nvim_set_keymap("i", "<C-E>", "<Plug>luasnip-next-choice", {})
 vim.api.nvim_set_keymap("s", "<C-E>", "<Plug>luasnip-next-choice", {})
 
 -- snippets
-require("luasnip.loaders.from_vscode").load({ include = {"go"} })
+require("luasnip.loaders.from_vscode").lazy_load()
