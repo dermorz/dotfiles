@@ -2049,6 +2049,7 @@ c.zoom.default = '150%'
 # c.zoom.text_only = False
 
 config.bind(',m', 'spawn umpv {url}')
+config.bind(',M', 'hint links spawn umpv {hint-url}')
 ## Bindings for normal mode
 # config.bind("'", 'mode-enter jump_mark')
 # config.bind('+', 'zoom-in')
