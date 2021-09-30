@@ -50,6 +50,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# gopass
+bindsym $mod+p exec --no-startup-id i3-gopass
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
