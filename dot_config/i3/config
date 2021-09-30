@@ -148,6 +148,7 @@ assign [class="TelegramDesktop"] $ws0
 
 # special window handling
 for_window [title="textfield editor"] floating enable
+for_window [class="mpv"] floating enable
 
 # i3
 set $mode_i3 [r] Reload [Shift+r] Restart [e] Exit
