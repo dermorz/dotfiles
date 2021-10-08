@@ -48,3 +48,6 @@ lsp.sumneko_lua.setup {
         },
     },
 }
+
+-- python
+
