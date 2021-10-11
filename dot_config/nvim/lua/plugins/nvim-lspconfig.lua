@@ -50,4 +50,4 @@ lsp.sumneko_lua.setup {
 }
 
 -- python
-lsp.pyright.setup{}
+lsp.pylsp.setup{}
