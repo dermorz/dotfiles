@@ -31,6 +31,7 @@ set_from_resource $darkwhite   color7  #FF0000
 set_from_resource $white       color15 #FF0000
 
 font pango:Fira Code 12
+popup_during_fullscreen ignore
 
 exec --no-startup-id nm-applet
 
