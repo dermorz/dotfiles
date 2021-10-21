@@ -2,7 +2,8 @@
 local cmd = vim.cmd
 
 require('go').setup{
-    goimport='goimports',
+    goimport='gopls',
+    gofmt='gopls',
     comment_placeholder='',
 }
 
