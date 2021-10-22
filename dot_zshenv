@@ -7,9 +7,16 @@ fi
 export NVM_DIR="$HOME/.nvm"
 export NVM_LAZY_LOAD=true
 
+# go
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 export GO111MODULE="on"
 export GOPROXY="https://proxy.golang.org"
 
 export GPG_TTY=$(tty)
+
+# enable envdir
+eval "$(direnv hook zsh)"
+
+# enable nix
+if [ -e /home/morz/.nix-profile/etc/profile.d/nix.sh ]; then . /home/morz/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
