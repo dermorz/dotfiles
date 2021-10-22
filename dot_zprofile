@@ -21,10 +21,13 @@ path=(
   $HOME/.tfenv/bin
   $GOBIN
   $path
+  $HOME/.asdf/bin
+  $HOME/.asdf/shims
 )
 cdpath=(
   $HOME/go
   $HOME/code
+  $HOME/k8c
 )
 fpath=(
   $HOME/.zcompletions
