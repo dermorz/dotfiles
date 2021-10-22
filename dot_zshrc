@@ -26,7 +26,7 @@ zplug "modules/syntax-highlighting", from:prezto
 
 zplug "plugins/docker", from:oh-my-zsh
 zplug "zsh-vi-more/evil-registers"
-zplug "${HOME}/.zsettings", from:local
+zplug "${HOME}/.zsettings", from:local, as:plugin
 
 if ! zplug check --verbose; then
   printf "Install zplug plugins? [y/N]: "
