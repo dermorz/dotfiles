@@ -227,8 +227,8 @@ mode "$mode_output" {
 bindsym $mod+o mode "$mode_output"
 
 # keyboard settings
-set $mode_output Keyboard delay and repeat: [d] default [s] Starcraft
-mode "$mode_output" {
+set $mode_keyboard Keyboard delay and repeat: [d] default [s] Starcraft
+mode "$mode_keyboard" {
         bindsym s exec --no-startup-id "xset r rate 200 50", mode "default"
         bindsym d exec --no-startup-id "xset r rate", mode "default"
 
@@ -236,7 +236,7 @@ mode "$mode_output" {
         bindsym Escape mode "default"
         bindsym $mod+Shift+k mode "default"
 }
-bindsym $mod+Shift+k mode "$mode_output"
+bindsym $mod+Shift+k mode "$mode_keyboard"
 
 # redshift modes
 set $mode_redshift Set colour temperature: [a] Auto [r] Reset [2] 2500K [3] 3000K [4] 4000K [5] 5000K
