@@ -2048,8 +2048,10 @@ c.zoom.default = '150%'
 ## Type: Bool
 # c.zoom.text_only = False
 
-config.bind(',m', 'spawn umpv {url}')
-config.bind(',M', 'hint links spawn umpv {hint-url}')
+# Custom bindings for mpv
+config.bind(',m', 'spawn umpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best[height<=480]" {url}')
+config.bind(',M', 'hint links spawn umpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best[height<=480]" {hint-url}')
+
 ## Bindings for normal mode
 # config.bind("'", 'mode-enter jump_mark')
 # config.bind('+', 'zoom-in')
