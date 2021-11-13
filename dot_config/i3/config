@@ -238,6 +238,18 @@ mode "$mode_keyboard" {
 }
 bindsym $mod+Shift+k mode "$mode_keyboard"
 
+# bluetooth settings
+set $mode_bluetooth Bluetooth Earplugs: [c] connect [d] disconnect
+mode "$mode_bluetooth" {
+        bindsym c exec --no-startup-id "bluetoothctl connect 54:A4:93:57:E1:7C", mode "default"
+        bindsym d exec --no-startup-id "bluetoothctl disconnect 54:A4:93:57:E1:7C", mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+b mode "default"
+}
+bindsym $mod+b mode "$mode_bluetooth"
+
 # redshift modes
 set $mode_redshift Set colour temperature: [a] Auto [r] Reset [2] 2500K [3] 3000K [4] 4000K [5] 5000K
 set $kill_redshift pkill -9 redshift;
