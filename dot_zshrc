@@ -14,7 +14,6 @@ zplug "modules/environment", from:prezto
 zplug "modules/terminal", from:prezto
 zplug "modules/editor", from:prezto
 zplug "modules/history", from:prezto
-zplug "modules/directory", from:prezto
 zplug "modules/spectrum", from:prezto
 zplug "modules/prompt", from:prezto
 zplug "modules/completion", from:prezto
