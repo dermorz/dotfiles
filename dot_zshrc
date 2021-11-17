@@ -27,7 +27,7 @@ zplug "modules/syntax-highlighting", from:prezto
 zplug "plugins/docker", from:oh-my-zsh
 zplug "zsh-vi-more/evil-registers"
 zplug "${HOME}/.zsettings", from:local, as:plugin
-zplug "kubermatic/fubectl", from:github, as:plugin
+zplug "kubermatic/fubectl", from:github, use:fubectl.plugin.zsh, as:plugin
 
 if ! zplug check --verbose; then
   printf "Install zplug plugins? [y/N]: "
