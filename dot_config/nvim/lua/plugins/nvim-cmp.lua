@@ -12,8 +12,9 @@ end
 cmp.setup {
     snippet = {
         expand = function(args)
-            vim.fn["UltiSnips#Anon"](args.body)
+            require('luasnip').lsp_expand(args.body)
         end,
+
     },
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
