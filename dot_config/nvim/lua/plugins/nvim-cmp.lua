@@ -17,7 +17,15 @@ cmp.setup {
         { name = 'luasnip' },
     }),
     formatting = {
-        format = lspkind.cmp_format()
+        format = lspkind.cmp_format({
+            with_text = false,
+            menu = ({
+                buffer = "[Buffer]",
+                nvim_lsp = "[LSP]",
+                luasnip = "[LuaSnip]",
+                path = "[Path]",
+            })
+        })
     },
 }
 
