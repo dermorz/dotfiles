@@ -17,9 +17,10 @@ cmp.setup {
         { name = 'luasnip' },
     }),
     formatting = {
-        format = lspkind.cmp_format()
+        format = lspkind.cmp_format({with_text = false})
     },
 }
+
 
 -- snippets
 require("luasnip.loaders.from_vscode").lazy_load()
