@@ -10,9 +10,11 @@ cmp.setup {
         { name = 'nvim_lsp' },
         { name = 'buffer' },
         { name = 'emoji' },
+        { name = 'path' },
+        { name = 'cmdline' },
+        { name = 'calc' },
+        { name = 'luasnip' },
     })
-
-
 }
 
 -- snippets
