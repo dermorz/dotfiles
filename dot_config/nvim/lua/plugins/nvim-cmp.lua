@@ -17,7 +17,7 @@ cmp.setup {
         { name = 'luasnip' },
     }),
     formatting = {
-        format = lspkind.cmp_format({with_text = false})
+        format = lspkind.cmp_format()
     },
 }
 
