@@ -51,12 +51,14 @@ require "paq" {
     'hrsh7th/cmp-cmdline';
     'hrsh7th/cmp-calc';
     'hrsh7th/cmp-emoji';
+
     'hrsh7th/nvim-cmp';
 
     'L3MON4D3/LuaSnip';
     'saadparwaiz1/cmp_luasnip';
     'rafamadriz/friendly-snippets';
 
+    'onsails/lspkind-nvim';
 
     -- vim stuff
     'tpope/vim-commentary';

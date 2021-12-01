@@ -1,5 +1,6 @@
 -- cmp
 local cmp = require'cmp'
+local lspkind = require'lspkind'
 cmp.setup {
     snippet = {
         expand = function(args)
@@ -14,7 +15,10 @@ cmp.setup {
         { name = 'cmdline' },
         { name = 'calc' },
         { name = 'luasnip' },
-    })
+    }),
+    formatting = {
+        format = lspkind.cmp_format()
+    },
 }
 
 -- snippets
