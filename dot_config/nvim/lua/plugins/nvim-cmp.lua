@@ -57,6 +57,8 @@ cmp.setup {
                 fallback()
             end
         end, {"i", "s"}),
+
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
     },
 }
 
