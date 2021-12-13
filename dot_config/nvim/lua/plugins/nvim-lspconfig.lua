@@ -13,7 +13,11 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 
 lsp.gopls.setup{
     capabilities = capabilities,
-    buildFlags = "-tags=e2e"
+    settings = {
+        gopls = {
+            buildFlags = "-tags=e2e"
+        },
+    },
 }
 
 -- lua
