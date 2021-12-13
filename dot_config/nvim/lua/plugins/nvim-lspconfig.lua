@@ -15,7 +15,7 @@ lsp.gopls.setup{
     capabilities = capabilities,
     settings = {
         gopls = {
-            buildFlags = "-tags=e2e"
+            buildFlags = {"-tags=e2e"},
         },
     },
 }
