@@ -57,5 +57,8 @@ lsp.sumneko_lua.setup {
 -- python
 lsp.pylsp.setup{}
 
+-- bash
+lsp.bashls.setup{}
+
 -- c/cpp/objc/objcpp
 lsp.ccls.setup{}
