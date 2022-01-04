@@ -49,6 +49,10 @@ git-personal () {
   git config user.email mail@morz.me
 }
 
-github () {
-  git clone git@github.com:${1} "${2}"
+github-clone () {
+  local account="${1%%/*}"
+  local repo="${1##*/}"
+  local folder="${2:-$repo}"
+
+  git clone "git@github.com:${account}/${repo}" "${folder}"
 }
