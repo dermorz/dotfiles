@@ -25,7 +25,7 @@ require "paq" {
     -- fuzzy finder
     'nvim-telescope/telescope.nvim';
 
-    -- code
+    -- general code
     {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' };
     'nvim-treesitter/playground';
     'nvim-treesitter/nvim-treesitter-textobjects';
@@ -42,6 +42,9 @@ require "paq" {
 
     -- markdown
     {'iamcco/markdown-preview.nvim', run = ':call mkdp#util#install()'};
+
+    -- terraforml
+    'hashivim/vim-terraform';
 
     -- completion
     -- 'hrsh7th/nvim-compe';
