@@ -59,6 +59,7 @@ bindsym $mod+p exec --no-startup-id i3-gopass
 bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec "rofi -show combi"
+bindsym $mod+i exec "rofimoji"
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
