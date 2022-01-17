@@ -1154,7 +1154,7 @@ c.content.notifications.enabled = 'ask'
 ## `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
-c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', 'nvim', '{file}']
+c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', '~/.asdf/shims/nvim', '{file}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
