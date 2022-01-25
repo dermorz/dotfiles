@@ -278,10 +278,14 @@ exec_always --no-startup-id xset s off
 exec --no-startup-id xsetroot -solid "#333333"
 
 # autostart
+## i3
 set $polybar sleep 0.2; $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $polybar
+
+## utility
 exec --no-startup-id exec flameshot
 
+## communication
 exec --no-startup-id exec telegram-desktop
 exec --no-startup-id exec signal-desktop
 exec --no-startup-id exec slack
