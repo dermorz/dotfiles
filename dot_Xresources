@@ -39,3 +39,5 @@ URxvt.scrollBar: false
 ! white
 *.color7:       #b2a191
 *.color15:      #e8d0c3
+
+Xft.dpi: 144
