@@ -664,7 +664,7 @@ config.load_autoconfig(True)
 
 ## Automatically start playing `<video>` elements.
 ## Type: Bool
-c.content.autoplay = False
+# c.content.autoplay = False
 
 ## List of URLs to ABP-style adblocking rulesets.  Only used when Brave's
 ## ABP-style adblocker is used (see `content.blocking.method`).  You can
@@ -1154,7 +1154,7 @@ c.content.notifications.enabled = 'ask'
 ## `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
-c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', '~/.asdf/shims/nvim', '{file}']
+c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', 'nvim', '{file}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
@@ -2034,7 +2034,7 @@ c.qt.highdpi = True
 
 ## Default zoom level.
 ## Type: Perc
-c.zoom.default = '150%'
+c.zoom.default = '100%'
 
 ## Available zoom levels.
 ## Type: List of Perc
@@ -2048,10 +2048,8 @@ c.zoom.default = '150%'
 ## Type: Bool
 # c.zoom.text_only = False
 
-# Custom bindings for mpv
 config.bind(',m', 'spawn umpv {url}')
 config.bind(',M', 'hint links spawn umpv {hint-url}')
-
 ## Bindings for normal mode
 # config.bind("'", 'mode-enter jump_mark')
 # config.bind('+', 'zoom-in')
