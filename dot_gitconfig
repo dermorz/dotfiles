@@ -18,6 +18,7 @@
 	fixup = "!f(){ git reset --soft HEAD~${1} && git commit --amend -C HEAD; };f"
 [merge]
 	ff = false
+	tool = vimdiff
 [pull]
 	rebase = true
 [core]
@@ -29,3 +30,5 @@
 	program = gpg2
 [init]
 	defaultBranch = main
+[mergetool "vimdiff"]
+	path = nvim
