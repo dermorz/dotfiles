@@ -3,8 +3,8 @@
   pager = "delta"
 
 [merge]
-  command = "vimdiff"
-  # args = "-d"
+  command = "nvim"
+  args = "-d"
 
 [git]
   autoCommit = true
