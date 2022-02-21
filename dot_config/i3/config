@@ -231,7 +231,7 @@ bindsym $mod+o mode "$mode_output"
 # keyboard settings
 set $mode_keyboard Keyboard delay and repeat: [d] default [s] Starcraft
 mode "$mode_keyboard" {
-        bindsym s exec --no-startup-id "xset r rate 200 50", mode "default"
+        bindsym s exec --no-startup-id "xset r rate 100 50", mode "default"
         bindsym d exec --no-startup-id "xset r rate", mode "default"
 
         bindsym Return mode "default"
