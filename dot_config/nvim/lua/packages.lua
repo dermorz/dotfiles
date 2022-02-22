@@ -31,7 +31,7 @@ require "paq" {
     'nvim-treesitter/nvim-treesitter-textobjects';
 
     -- git
-    'tanvirtin/vgit.nvim';
+    'lewis6991/gitsigns.nvim';
 
     -- lsp
     'neovim/nvim-lspconfig';
