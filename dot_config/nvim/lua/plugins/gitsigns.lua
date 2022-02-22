@@ -1,8 +1,3 @@
-require 'vgit'.setup{
-    preview = {
-    }
+require 'gitsigns'.setup{
+
 }
-
-local set_keymap = require('common').set_keymap
-
-set_keymap('n', '<leader>gd', '<cmd>VGit diff<cr>')
