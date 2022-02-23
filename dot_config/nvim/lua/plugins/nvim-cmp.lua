@@ -63,7 +63,5 @@ cmp.setup {
     },
 }
 
-cmp.setup.filetypes["vimwiki"] = cmp.setup.filetypes["markdown"]
-
 -- snippets
 require("luasnip.loaders.from_vscode").lazy_load()
