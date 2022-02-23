@@ -5,3 +5,5 @@ cmd("au BufWritePost ~/.local/share/chezmoi/* silent ! chezmoi apply --source-pa
 
 -- remove trailint whitespace
 cmd("au FileType go,python,lua,c,cpp au BufWritePre <buffer> :%s/\\s\\+$//e")
+
+cmd("au FileType vimwiki silent set ft=markdown")
