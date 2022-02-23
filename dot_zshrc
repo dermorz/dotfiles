@@ -36,3 +36,8 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
+
+. <(konf-go shellwrapper zsh)
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/morz/.asdf/installs/vault/1.9.0/bin/vault vault
