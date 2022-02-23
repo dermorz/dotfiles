@@ -10,6 +10,8 @@ g['vimwiki_list'] = {{
     links_space_char = '_',
     nested_syntaxes = {
         go = 'go',
+        yaml = 'yaml',
+        json = 'json',
     },
 }}
 g['vimwiki_global_ext'] = 0
