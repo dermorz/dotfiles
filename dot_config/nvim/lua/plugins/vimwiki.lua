@@ -1,6 +1,5 @@
 -- vimwiki
 local g = vim.g
-local cmd = vim.cmd
 
 g['vimwiki_list'] = {{
     name = 'brain',
@@ -17,4 +16,3 @@ g['vimwiki_list'] = {{
 }}
 g['vimwiki_global_ext'] = 0
 g['vimwiki_markdown_link_ext'] = 1
-cmd('au BufNewFile,BufReadPost ~/.cache/vimwiki/brain/*.md set ft=markdown')
