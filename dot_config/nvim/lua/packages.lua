@@ -73,4 +73,7 @@ require "paq" {
 
     -- vimwiki
     'vimwiki/vimwiki';
+
+    -- himalaya (mail)
+    'soywod/himalaya';
 }
