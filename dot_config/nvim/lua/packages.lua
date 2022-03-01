@@ -42,6 +42,7 @@ require "paq" {
 
     -- markdown
     {'iamcco/markdown-preview.nvim', run = ':call mkdp#util#install()'};
+    'ixru/nvim-markdown';
 
     -- terraforml
     'hashivim/vim-terraform';
