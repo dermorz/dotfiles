@@ -70,6 +70,7 @@ require "paq" {
     'tpope/vim-sleuth';
     'tpope/vim-surround';
     'christoomey/vim-sort-motion';
+    'simnalamburt/vim-mundo';
 
     -- vimwiki
     'vimwiki/vimwiki';
