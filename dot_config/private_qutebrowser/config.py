@@ -1084,7 +1084,7 @@ c.content.notifications.enabled = 'ask'
 
 ## List of user stylesheet filenames to use.
 ## Type: List of File, or File
-# c.content.user_stylesheets = []
+c.content.user_stylesheets = ['~/.config/qutebrowser/css/custom.css']
 
 ## Enable WebGL.
 ## Type: Bool
