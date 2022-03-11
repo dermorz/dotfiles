@@ -1,0 +1,9 @@
+/* disable spinning effects */
+.flip-front, .flip-back {
+    animation: none !important;
+}
+
+/* hide constant product update notifications */
+#quick_help_container {
+    display: none !important;
+}
