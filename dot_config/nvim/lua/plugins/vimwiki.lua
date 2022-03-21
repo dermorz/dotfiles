@@ -16,3 +16,4 @@ g['vimwiki_list'] = {{
 }}
 g['vimwiki_global_ext'] = 0
 g['vimwiki_markdown_link_ext'] = 1
+g['vimwiki_auto_chdir'] = 1
