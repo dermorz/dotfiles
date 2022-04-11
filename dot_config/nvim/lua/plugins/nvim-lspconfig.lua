@@ -65,6 +65,3 @@ lsp.ccls.setup{}
 
 -- terraform
 lsp.terraformls.setup{}
-
--- grammarly
-lsp.grammarly.setup{}
