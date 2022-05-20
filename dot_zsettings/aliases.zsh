@@ -11,6 +11,8 @@ alias k='kubectl'
 alias ls=exa
 alias ll="ls -l"
 alias la="ll -ah"
+alias lsm="ls -s modified"
+alias lsc="ls -s new"
 
 alias start="timew start"
 alias stop="timew stop"
