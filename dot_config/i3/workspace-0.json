@@ -82,6 +82,28 @@
         "y": 150
       },
       "marks": [],
+      "name": "Discord",
+      "percent": 0.25,
+      "swallows": [
+        {
+          "class": "^discord$",
+          "instance": "^discord$",
+          "window_role": "^browser\\-window$"
+        }
+      ],
+      "type": "con"
+    },
+    {
+      "border": "normal",
+      "current_border_width": 2,
+      "floating": "auto_off",
+      "geometry": {
+        "height": 928,
+        "width": 1916,
+        "x": 2,
+        "y": 150
+      },
+      "marks": [],
       "name": "Signal",
       "percent": 0.25,
       "swallows": [
