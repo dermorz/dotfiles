@@ -290,7 +290,8 @@ exec_always --no-startup-id $polybar
 exec --no-startup-id exec flameshot
 
 ## communication
-exec --no-startup-id exec telegram-desktop
-exec --no-startup-id exec signal-desktop
-exec --no-startup-id exec slack
+exec --no-startup-id exec flatpak run org.signal.Signal
+exec --no-startup-id exec org.telegram.desktop
+exec --no-startup-id exec com.slack.Slack
+exec --no-startup-id exec com.discordapp.Discord
 exec --no-startup-id exec chromium-freeworld
