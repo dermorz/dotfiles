@@ -26,7 +26,7 @@ opt.relativenumber = true
 -- editing
 opt.whichwrap = 'b,s,<,>,[,]' -- cursor is able to move from end of line to next line
 opt.backspace = { 'indent', 'eol', 'start' } -- backspace behaviors
-opt.listchars = "eol:¬,tab:  ,trail:~,extends:>,precedes:<,space:·"
+opt.listchars = "eol:¬,tab:  ,trail:~,extends:>,precedes:<"
 opt.list = true -- show tabs with listchars
 opt.ignorecase = true -- search with ignore case by default
 opt.smartcase = true -- search search case sensitive if search term contains uppercase letter
