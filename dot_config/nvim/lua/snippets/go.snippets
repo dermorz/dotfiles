@@ -1,0 +1,5 @@
+snippet err "if error not nil, return err"
+	if ${1}err != nil {
+		return ${2: nil, }fmt.Errorf("${3} %w", err)
+	}
+	${0}
