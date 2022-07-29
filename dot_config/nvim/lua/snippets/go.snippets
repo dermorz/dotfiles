@@ -1,4 +1,4 @@
-snippet err "if error not nil, return err"
+snippet iferr "if error not nil, wrap and return error"
 	if ${1}err != nil {
 		return ${2: nil}, fmt.Errorf("${3}: %w", err)
 	}
