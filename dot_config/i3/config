@@ -156,7 +156,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws0
 exec --no-startup-id "i3-msg 'workspace 0; append_layout /home/morz/.config/i3/workspace-0.json; workspace 1: Main'"
 
 # special window handling
-for_window [title="textfield editor"] floating enable
+for_window [title="textfield editor"] floating enable, resize set 1440px 810px,  move position center
 for_window [class="mpv"] floating enable
 
 # i3
