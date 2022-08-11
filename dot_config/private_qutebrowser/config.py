@@ -1154,7 +1154,7 @@ c.content.user_stylesheets = ['~/.config/qutebrowser/css/custom.css']
 ## `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
-c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', 'nvim', '-c', 'SoftWrap', '{file}']
+c.editor.command = ['alacritty', '-t', 'textfield editor', '-e', 'nvim', '-c', 'SoftWrap', '-c', '"set filetype=markdown"', '{file}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
