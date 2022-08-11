@@ -6,6 +6,8 @@ require('mappings')
 
 require('tools')
 
+require('usercommands')
+
 -- plugins
 require('plugins.gitsigns')
 require('plugins.go')
