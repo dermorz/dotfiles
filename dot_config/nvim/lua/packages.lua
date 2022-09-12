@@ -29,6 +29,7 @@ require "paq" {
     {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' };
     'nvim-treesitter/playground';
     'nvim-treesitter/nvim-treesitter-textobjects';
+    'junegunn/vim-easy-align';
 
     -- git
     'lewis6991/gitsigns.nvim';
