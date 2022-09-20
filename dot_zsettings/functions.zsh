@@ -56,3 +56,15 @@ github-clone () {
 
   git clone "git@github.com:${account}/${repo}" "${folder}"
 }
+
+local-mc () {
+  TMP_MC_KUBECONFIG=$(mktemp)
+  local cluster="$(kubectl get cluster | _inline_fzf | awk '{print $1}')"
+  kubectl get secret admin-kubeconfig -n cluster-$cluster -otemplate --template='{{.data.kubeconfig}}' | base64 -d > $TMP_MC_KUBECONFIG
+  export MC_KUBECONFIG=$TMP_MC_KUBECONFIG
+  export POD_NAMESPACE=cluster-$cluster
+  export OWNER_EMAIL=moritz@kubermatic.com
+  kubectl label --overwrite cluster $cluster worker-name=$(hostname)
+  kubectl scale -n cluster-$cluster deployment --replicas=0 machine-controller
+  ./hack/run-machine-controller.sh
+}
