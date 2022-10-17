@@ -23,6 +23,7 @@ path=(
   $path
   $HOME/.asdf/bin
   $HOME/.asdf/shims
+  $HOME/.cargo/bin
 )
 cdpath=(
   $HOME/go
