@@ -28,15 +28,6 @@ aws-login () {
   yawsso -p $1
 }
 
-ensure-1password-login () {
-  op list vaults &> /dev/null
-  if [ "$?" -ne "0" ]
-  then
-    eval $(op signin "${subdomain}")
-  fi
-  op list vaults &> /dev/null || return 1
-}
-
 summary () {
 for tag in $(timew tags | grep BACK | cut -d' ' -f1)
   do
@@ -67,4 +58,9 @@ local-mc () {
   kubectl label --overwrite cluster $cluster worker-name=$(hostname)
   kubectl scale -n cluster-$cluster deployment --replicas=0 machine-controller
   ./hack/run-machine-controller.sh
+}
+
+vault-login () {
+  export VAULT_ADDR=https://vault.kubermatic.com/
+  vault login --method=oidc --path=loodse
 }
