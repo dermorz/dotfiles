@@ -15,3 +15,5 @@ set_keymap('n', '<C-k>', '<cmd>cp<cr>')
 set_keymap('n', 'H', '<cmd>bp<cr>')
 set_keymap('n', 'L', '<cmd>bn<cr>')
 set_keymap('n', 'ga', '<Plug>(EasyAlign)')
+
+set_keymap('n', '<leader>b', '<cmd>lua require"dap".toggle_breakpoint()<cr>')
