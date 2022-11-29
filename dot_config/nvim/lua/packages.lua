@@ -30,6 +30,7 @@ require "paq" {
     'nvim-treesitter/playground';
     'nvim-treesitter/nvim-treesitter-textobjects';
     'junegunn/vim-easy-align';
+    'mfussenegger/nvim-dap';
 
     -- git
     'lewis6991/gitsigns.nvim';
