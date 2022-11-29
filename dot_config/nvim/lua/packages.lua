@@ -41,6 +41,7 @@ require "paq" {
 
     -- go
     'ray-x/go.nvim';
+    'leoluz/nvim-dap-go';
 
     -- markdown
     {'iamcco/markdown-preview.nvim', run = ':call mkdp#util#install()'};
