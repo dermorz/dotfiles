@@ -8,3 +8,6 @@ require('go').setup{
 }
 
 cmd("autocmd BufWritePre *.go silent! lua require('go.format').goimport()")
+
+-- leoluz/nvim-dap-go
+require('dap-go').setup()
