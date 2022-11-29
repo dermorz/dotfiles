@@ -20,3 +20,5 @@ set_keymap('n', '<leader>db', '<cmd>lua require"dap".toggle_breakpoint()<cr>')
 set_keymap('n', '<leader>dc', '<cmd>lua require"dap".continue()<cr>')
 set_keymap('n', '<leader>dn', '<cmd>lua require"dap".step_over()<cr>')
 set_keymap('n', '<leader>ds', '<cmd>lua require"dap".step_into()<cr>')
+
+set_keymap('t', '<esc>', '<C-\\><C-n>')
