@@ -21,7 +21,6 @@ cmp.setup {
         { name = 'buffer' },
         { name = 'emoji' },
         { name = 'path' },
-        { name = 'cmdline' },
         { name = 'calc' },
         { name = 'luasnip' },
     }),
