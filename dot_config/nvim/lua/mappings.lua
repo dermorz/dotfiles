@@ -16,6 +16,8 @@ set_keymap('n', 'H', '<cmd>bp<cr>')
 set_keymap('n', 'L', '<cmd>bn<cr>')
 set_keymap('n', 'ga', '<Plug>(EasyAlign)')
 
+set_keymap('n', '<leader>n', '<cmd>lua vim.diagnostic.goto_next()<cr>')
+
 set_keymap('n', '<leader>db', '<cmd>lua require"dap".toggle_breakpoint()<cr>')
 set_keymap('n', '<leader>dc', '<cmd>lua require"dap".continue()<cr>')
 set_keymap('n', '<leader>dn', '<cmd>lua require"dap".step_over()<cr>')
