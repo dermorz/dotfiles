@@ -4,6 +4,7 @@ vim.api.nvim_create_user_command(
         vim.o.wrap = true
         vim.o.linebreak = true
         vim.o.showbreak = '+++'
+        vim.o.textwidth = 0
 
         local opts = { noremap = true, silent = false }
         vim.api.nvim_buf_set_keymap(0, '', 'j', 'gj', opts)
