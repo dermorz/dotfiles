@@ -38,50 +38,6 @@
         "y": 150
       },
       "marks": [],
-      "name": "moritz@kubermatic.com - Kubermatic GmbH Mail/Calendar - Chromium",
-      "percent": 0.25,
-      "swallows": [
-        {
-          "class": "^Chromium\\-freeworld$",
-          "instance": "^chromium\\-freeworld$",
-          "window_role": "^browser$"
-        }
-      ],
-      "type": "con"
-    },
-    {
-      "border": "normal",
-      "current_border_width": 2,
-      "floating": "auto_off",
-      "geometry": {
-        "height": 928,
-        "width": 1916,
-        "x": 2,
-        "y": 150
-      },
-      "marks": [],
-      "name": "Slack | Kubermatic GmbH",
-      "percent": 0.25,
-      "swallows": [
-        {
-          "class": "^Slack$",
-          "instance": "^slack$",
-          "window_role": "^browser\\-window$"
-        }
-      ],
-      "type": "con"
-    },
-    {
-      "border": "normal",
-      "current_border_width": 2,
-      "floating": "auto_off",
-      "geometry": {
-        "height": 928,
-        "width": 1916,
-        "x": 2,
-        "y": 150
-      },
-      "marks": [],
       "name": "Discord",
       "percent": 0.25,
       "swallows": [
