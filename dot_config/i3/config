@@ -115,7 +115,7 @@ set $ws0 "0"
 # define outputs
 set $internal eDP
 set $external DisplayPort-0
-set $external-hdmi HDMI-A-0
+set $hdmi HDMI-A-0
 
 # assign workspaces to preferred outputs
 workspace $ws1 output $external $internal
@@ -218,15 +218,15 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
- display setup
-set $mode_output [i] Internal [e] External [d] Dual
+# display setup
+set $mode_output [i] Internal [e] External [d] Dual [h] Dual HDMI
 mode "$mode_output" {
         bindsym i exec --no-startup-id "xrandr --output $internal --primary --auto --output $external --off && $polybar", mode "default"
         bindsym e exec --no-startup-id "xrandr --output $external --primary --auto --output $internal --off && $polybar", mode "default"
         bindsym s exec --no-startup-id "xrandr --output $external --primary --mode 1920x1080 --output $internal --off && $polybar", mode "default"
         bindsym Shift+s exec --no-startup-id "xrandr --output $external --primary --mode 1920x1080 --pos 0x0 --output $internal --auto --pos 1920x0 && $polybar", mode "default"
         bindsym d exec --no-startup-id "xrandr --output $external --primary --mode 3840x2160 --pos 0x0 --output $internal --auto --pos 3840x1000 && $polybar", mode "default"
-        bindsym h exec --no-startup-id "xrandr --output $external-hdmi --primary --auto --output $internal --auto && $polybar", mode "default"
+        bindsym h exec --no-startup-id "xrandr --output $hdmi --auto --output $internal --auto && $polybar", mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
