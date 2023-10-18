@@ -226,7 +226,7 @@ mode "$mode_output" {
         bindsym s exec --no-startup-id "xrandr --output $external --primary --mode 1920x1080 --output $internal --off && $polybar", mode "default"
         bindsym Shift+s exec --no-startup-id "xrandr --output $external --primary --mode 1920x1080 --pos 0x0 --output $internal --auto --pos 1920x0 && $polybar", mode "default"
         bindsym d exec --no-startup-id "xrandr --output $external --primary --mode 3840x2160 --pos 0x0 --output $internal --auto --pos 3840x1000 && $polybar", mode "default"
-        bindsym h exec --no-startup-id "xrandr --output $hdmi --auto --output $internal --primary --auto && $polybar", mode "default"
+        bindsym h exec --no-startup-id "xrandr --output $hdmi --auto --output $internal --primary --pos 1980x0 && $polybar", mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
