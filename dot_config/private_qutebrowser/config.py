@@ -1231,7 +1231,7 @@ c.fonts.default_size = '12pt'
 
 ## Font used for the hints.
 ## Type: Font
-# c.fonts.hints = 'bold default_size default_family'
+c.fonts.hints = 'bold 10pt default_family'
 
 ## Font used in the keyhint widget.
 ## Type: Font
