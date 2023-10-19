@@ -30,7 +30,7 @@ set_from_resource $cyan        color14 #FF0000
 set_from_resource $darkwhite   color7  #FF0000
 set_from_resource $white       color15 #FF0000
 
-font pango: Comic Code Nerd Font 10
+font pango: ComicCode Nerd Font 10
 popup_during_fullscreen ignore
 
 exec --no-startup-id nm-applet
