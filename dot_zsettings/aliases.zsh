@@ -8,7 +8,7 @@ alias -g G='|grep '
 
 alias k='kubectl'
 
-alias ls=exa
+alias ls=eza
 alias ll="ls -l"
 alias la="ll -ah"
 alias lsm="ls -s modified"
