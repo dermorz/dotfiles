@@ -1,0 +1,85 @@
+@define-color background #222D31;
+@define-color statusline #F9FAF9;
+@define-color separator #454947;
+
+@define-color focused_workspace #F9FAF9;
+@define-color focused_workspace_bg #16a085;
+@define-color focused_workspace_border #292F34;
+
+@define-color active_workspace #595B5B;
+@define-color active_workspace_bg #353836;
+@define-color active_workspace_border #FDF6E3;
+
+@define-color inactive_workspace #595B5B;
+@define-color inactive_workspace_bg #222D31;
+@define-color inactive_workspace_border #EEE8D5;
+
+@define-color urgent_workspace #16a085;
+@define-color urgent_workspace_bg #FDF6E3;
+@define-color urgent_workspace_border #E5201D;
+
+* {
+    font-family: ComicCode Nerd Font;
+    font-size: 15px;
+}
+
+window {
+    background-color: @background;
+    color: @statusline;
+}
+
+#workspaces button {
+    border: 0;
+    padding: 0 5px;
+    background-color: @inactive_workspace_bg;
+    color: @inactive_workspace_border;
+    border-color: @inactive_workspace_border;
+}
+
+#workspaces button.focused {
+    background-color: @focused_workspace_bg;
+    color: @focused_workspace;
+    border-color: @focused_workspace_border;
+}
+
+#workspaces button.active {
+    background-color: @active_workspace_bg;
+    color: @active_workspace_border;
+    border-color: @active_workspace_border;
+}
+
+#workspaces button.urgent {
+    background-color: @urgent_workspace_bg;
+    color: @urgent_workspace;
+    border-color: @urgent_workspace_border;
+}
+
+#mode {
+    background-color: @focused_workspace_bg;
+    color: @focused_workspace;
+    border-color: @focused_workspace_border;
+}
+
+#window {
+    color: @statusline;
+}
+
+#battery, #tray, #clock, #cpu {
+    padding: 0 16px;
+}
+
+#battery {
+    color: @statusline;
+}
+
+#network {
+    color: @statusline;
+}
+
+#clock {
+    color: @statusline;
+}
+
+#tray {
+    padding: 0 5px;
+}
