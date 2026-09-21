@@ -1,1 +1,10 @@
 README.md
+
+# Secrets - never manage these
+.config/nvim/.env
+
+# Editor/scratch leftovers
+**/*.bak
+
+# fontconfig runtime state, regenerated per machine
+.local/share/fonts/**/.uuid
