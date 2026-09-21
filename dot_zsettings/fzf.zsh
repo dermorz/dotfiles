@@ -15,4 +15,4 @@ _fzf_compgen_path() {
 
 # Key bindings
 # ------------
-[ -f /usr/share/fzf/shell/key-bindings.zsh ] && source /usr/share/fzf/shell/key-bindings.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh

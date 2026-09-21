@@ -20,9 +20,13 @@ style = "Italic"
 family = "ComicCode Nerd Font"
 style = "Regular"
 
+# Fallback fonts for emoji support
 [font.offset]
 x = 1
 y = 3
+
+# Emoji fonts are handled by the system fontconfig
+# No additional configuration needed for Alacritty 0.16.1
 
 [hints]
 alphabet = "asdfghjkl"
@@ -43,3 +47,8 @@ mods = "None"
 
 [scrolling]
 history = 50000
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

@@ -51,3 +51,20 @@ for m in visual viopp; do
 		bindkey -M $m $c select-bracketed
 	done
 done
+
+function paste_clipboard_after() {
+    BUFFER=$(wl-paste -p)
+    zle -R -c "$BUFFER"
+}
+zle -N paste_clipboard_after
+
+function paste_clipboard_before() {
+    local cursor_position=$CURSOR
+    BUFFER=$(wl-paste -p)
+    zle -R -c "$BUFFER"
+    CURSOR=$((cursor_position + ${#BUFFER}))
+}
+zle -N paste_clipboard_before
+
+bindkey -M vicmd 'p' paste_clipboard_after  # Paste after the cursor
+bindkey -M vicmd 'P' paste_clipboard_before   # Paste before the cursor

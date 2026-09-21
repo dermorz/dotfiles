@@ -24,6 +24,7 @@ path=(
   $path
   $HOME/.asdf/bin
   $HOME/.asdf/shims
+  $HOME/.opencode/bin
 )
 cdpath=(
   $HOME/go
@@ -38,4 +39,9 @@ fpath=(
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
+fi
+
+# SSH agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+   eval "$(ssh-agent -s)" > /dev/null
 fi

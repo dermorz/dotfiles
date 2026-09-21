@@ -495,7 +495,7 @@ config.load_autoconfig(True)
 ## `colors.webpage.darkmode.algorithm` is set to `lightness-hsl` or
 ## `brightness-rgb`.
 ## Type: Float
-# c.colors.webpage.darkmode.contrast = 0.0
+c.colors.webpage.darkmode.contrast = 0.0
 
 ## Render all web contents using a dark theme. Example configurations
 ## from Chromium's `chrome://flags`:  - "With simple HSL/CIELAB/RGB-based
@@ -507,7 +507,7 @@ config.load_autoconfig(True)
 ## `colors.webpage.darkmode.threshold.background` to 205.  - "With
 ## selective inversion of everything": Combines the two variants   above.
 ## Type: Bool
-# c.colors.webpage.darkmode.enabled = False
+c.colors.webpage.darkmode.enabled = False
 
 ## Render all colors as grayscale. This only has an effect when
 ## `colors.webpage.darkmode.algorithm` is set to `lightness-hsl` or
@@ -530,7 +530,7 @@ config.load_autoconfig(True)
 ##   - always: Apply dark mode filter to all images.
 ##   - never: Never apply dark mode filter to any images.
 ##   - smart: Apply dark mode based on image content. Not available with Qt 5.15.0.
-# c.colors.webpage.darkmode.policy.images = 'smart'
+c.colors.webpage.darkmode.policy.images = 'never'
 
 ## Which pages to apply dark mode to. The underlying Chromium setting has
 ## been removed in QtWebEngine 5.15.3, thus this setting is ignored
@@ -539,7 +539,7 @@ config.load_autoconfig(True)
 ## Valid values:
 ##   - always: Apply dark mode filter to all frames, regardless of content.
 ##   - smart: Apply dark mode filter to frames based on background color.
-# c.colors.webpage.darkmode.policy.page = 'smart'
+# c.colors.webpage.darkmode.policy.page = 'always'
 
 ## Threshold for inverting background elements with dark mode. Background
 ## elements with brightness above this threshold will be inverted, and
@@ -664,7 +664,7 @@ config.load_autoconfig(True)
 
 ## Automatically start playing `<video>` elements.
 ## Type: Bool
-c.content.autoplay = False
+c.content.autoplay = True
 
 ## List of URLs to ABP-style adblocking rulesets.  Only used when Brave's
 ## ABP-style adblocker is used (see `content.blocking.method`).  You can
@@ -1440,6 +1440,15 @@ c.fonts.web.family.fixed = 'Comic Code Nerd Font'
 ## Type: Bool
 # c.input.media_keys = True
 
+## Mode to change to when focusing on a tab/URL changes.
+## Type: String
+## Valid values:
+##   - normal
+##   - insert
+##   - passthrough
+config.set('input.mode_override', 'passthrough', 'https://claude.ai/*')
+config.set('input.mode_override', 'passthrough', 'https://chat.opendefense.cloud/*')
+
 ## Enable back and forward buttons on the mouse.
 ## Type: Bool
 # c.input.mouse.back_forward_buttons = True
@@ -2048,9 +2057,10 @@ c.zoom.default = '125%'
 ## Type: Bool
 # c.zoom.text_only = False
 
+## Bindings for normal mode
 config.bind(',m', 'spawn umpv {url}')
 config.bind(',M', 'hint links spawn umpv {hint-url}')
-## Bindings for normal mode
+config.bind('tt', 'set-cmd-text -s :tab-take')
 # config.bind("'", 'mode-enter jump_mark')
 # config.bind('+', 'zoom-in')
 # config.bind('-', 'zoom-out')

@@ -41,3 +41,5 @@ zplug load
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/morz/.asdf/installs/vault/1.9.0/bin/vault vault
+
+[[ -s "/home/dermorz/.gvm/scripts/gvm" ]] && source "/home/dermorz/.gvm/scripts/gvm"
