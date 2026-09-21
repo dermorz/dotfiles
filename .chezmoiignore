@@ -8,3 +8,6 @@ README.md
 
 # fontconfig runtime state, regenerated per machine
 .local/share/fonts/**/.uuid
+
+# Machine-specific git settings (identity, work overrides, tool IDs)
+.gitconfig.d/
