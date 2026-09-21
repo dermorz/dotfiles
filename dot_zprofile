@@ -18,12 +18,9 @@ path=(
   $HOME/{,.}bin
   $HOME/.local/bin
   /usr/local/{,s}bin
-  $HOME/.tfenv/bin
   $HOME/.cargo/bin
   $GOBIN
   $path
-  $HOME/.asdf/bin
-  $HOME/.asdf/shims
   $HOME/.opencode/bin
 )
 cdpath=(
