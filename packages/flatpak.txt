@@ -1,0 +1,2 @@
+flathub	de.breitbandmessung.Breitbandmessung
+flathub	org.polymc.PolyMC

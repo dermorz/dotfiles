@@ -1,0 +1,13 @@
+hexchat
+keybase
+lib32-flex
+lib32-libva-vdpau-driver
+libgnome-keyring
+libva-vdpau-driver
+manjaro-hotfixes
+moc
+palemoon
+reiserfsprogs
+sbxkb
+spectre-meltdown-checker
+xautolock

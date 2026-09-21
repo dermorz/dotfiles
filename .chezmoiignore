@@ -2,6 +2,7 @@ README.md
 
 # Secrets - never manage these
 .config/nvim/.env
+.config/aerc/accounts.conf
 
 # Editor/scratch leftovers
 **/*.bak
@@ -11,3 +12,6 @@ README.md
 
 # Machine-specific git settings (identity, work overrides, tool IDs)
 .gitconfig.d/
+
+# Repo tooling, not deployed to $HOME
+packages
