@@ -1,0 +1,18 @@
+# CodeCompanion API Keys - Free Tier Configuration
+# Get your free API keys from:
+# - Groq: https://console.groq.com/keys
+# - OpenRouter: https://openrouter.ai/keys  
+# - HuggingFace: https://huggingface.co/settings/tokens
+
+# Example format (uncomment and add your keys):
+# export GROQ_API_KEY="your_groq_key_here"
+# export OPENROUTER_API_KEY="your_openrouter_key_here"
+# export HUGGINGFACE_API_KEY="your_huggingface_key_here"
+
+# Local Ollama configuration (if using local models)
+# Make sure Ollama is running: ollama serve
+# Default port is 11434, but you can change in config
+
+# Quick aliases for common tasks
+alias cc-chat='nvim -c ":CodeCompanionChat"'
+alias cc-actions='nvim -c ":CodeCompanionActions"'
