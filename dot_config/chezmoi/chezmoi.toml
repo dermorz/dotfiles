@@ -1,3 +1,5 @@
+sourceDir = "/home/dermorz/code/dotfiles"
+
 [diff]
   format = "git"
   pager = "delta"
