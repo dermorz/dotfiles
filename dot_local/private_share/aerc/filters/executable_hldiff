@@ -1,0 +1,10 @@
+#!/usr/bin/env awk -f
+
+# Highlight diff output
+BEGIN { pane = 0 }
+
+/^\+\+\+/ { col = 32 }
+/^\-\-\-/ { col = 31 }
+/^@@/    { col = 36 }
+
+{ printf "\033[1;%dm%s\033[0m\n", col, $0 }

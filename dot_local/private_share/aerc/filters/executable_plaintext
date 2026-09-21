@@ -1,0 +1,16 @@
+#!/usr/bin/env awk -f
+
+# Strip HTML tags and decode HTML entities for plaintext display
+BEGIN {
+    FS = ""
+}
+
+{
+    gsub(/<[^>]+>/, "")
+    gsub(/&nbsp;/, " ")
+    gsub(/&amp;/, "\\&")
+    gsub(/&lt;/, "<")
+    gsub(/&gt;/, ">")
+    gsub(/&quot;/, "\"")
+    print
+}
