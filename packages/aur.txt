@@ -10,4 +10,3 @@ palemoon
 reiserfsprogs
 sbxkb
 spectre-meltdown-checker
-xautolock

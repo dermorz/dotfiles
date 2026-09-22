@@ -1,6 +1,7 @@
 accountsservice
 acpi
 acpid
+adapta-maia-theme
 aerc
 age
 alacritty
@@ -11,7 +12,6 @@ amd-ucode
 apache
 apparmor
 arandr
-artwork-i3
 autoconf
 automake
 avahi
@@ -24,6 +24,7 @@ blueman
 bluez-utils
 bmenu
 borgmatic
+breeze-cursors5
 btrfs-progs
 bzip2
 calcurse
@@ -140,7 +141,6 @@ manjaro-application-utility
 manjaro-browser-settings
 manjaro-downgrade
 manjaro-hello
-manjaro-i3-settings
 manjaro-printer
 manjaro-ranger-settings
 manjaro-release
@@ -183,6 +183,8 @@ openresolv
 openssh
 os-prober
 pamac-gtk
+papirus-icon-theme
+papirus-maia-icon-theme
 patch
 patchutils
 pcmanfm
