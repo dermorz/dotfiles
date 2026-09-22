@@ -15,3 +15,6 @@ README.md
 
 # Repo tooling, not deployed to $HOME
 packages
+
+# Local scratch, not deployed
+todo.md
