@@ -39,4 +39,3 @@ zplug load
 
 . <(konf-go shellwrapper zsh)
 
-[[ -s "/home/dermorz/.gvm/scripts/gvm" ]] && source "/home/dermorz/.gvm/scripts/gvm"
