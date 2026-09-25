@@ -15,6 +15,7 @@ arandr
 autoconf
 automake
 avahi
+avrdude
 b43-fwcutter
 base
 bat
@@ -196,6 +197,7 @@ podman
 polkit-gnome
 poppler-data
 powertop
+presenterm
 prusa-slicer
 pulsemixer
 pv

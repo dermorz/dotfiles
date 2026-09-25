@@ -28,8 +28,8 @@ Then the packages:
 
 | File | Source | Count |
 | ---- | ------ | ----- |
-| `pacman.txt`  | official repos (`pacman -Qqen`) | 321 |
-| `aur.txt`     | AUR (`pacman -Qqem`, installed via `yay`) | 13 |
+| `pacman.txt`  | official repos (`pacman -Qqen`) | 325 |
+| `aur.txt`     | AUR (`pacman -Qqem`, built via `pamac build`) | 13 |
 | `flatpak.txt` | flathub, as `remote application` pairs | 2 |
 | `snap.txt`    | snap, with channel/confinement flags | 3 |
 
@@ -38,8 +38,6 @@ left out — snap pulls them in as dependencies.
 
 ### Not automated
 
-- **rambox** — installed from a now-disabled flatpak remote (`app-origin`),
-  so it cannot be reinstalled from a list. Fetch it from the project page.
 - **fusion360** — installs in `devmode` from the beta channel; `sync.sh`
   passes those flags, but the snap itself is community-maintained and may
   need attention after install.

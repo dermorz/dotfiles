@@ -3,15 +3,13 @@
 #
 #   ./packages/sync.sh dump      refresh the lists from this machine
 #   ./packages/sync.sh install   install everything the lists name
-#
-# Not handled here (see README): rambox (flatpak from a now-disabled remote).
 set -euo pipefail
 cd "$(dirname "$0")"
 
 dump() {
   pacman -Qqen > pacman.txt
   pacman -Qqem > aur.txt
-  flatpak list --app --columns=origin,application | grep -v '^app-origin' > flatpak.txt
+  flatpak list --app --columns=origin,application > flatpak.txt
   # ponytail: snap marks bases in Notes but not content/runtime snaps, so those
   # are filtered by name. If a real app ever matches this grep, drop it here.
   snap list | awk 'NR>1 && $NF!="base" && $NF!="snapd" {
@@ -27,7 +25,10 @@ dump() {
 
 install() {
   xargs -r sudo pacman -S --needed --noconfirm < pacman.txt
-  xargs -r yay    -S --needed --noconfirm < aur.txt
+  sudo sed -i -E 's/^#(EnableAUR|CheckAURUpdates)$/\1/' /etc/pamac.conf
+  xargs -r pamac build --no-confirm       < aur.txt
+  # ponytail: rambox-pro-bin ships /opt/rambox as 0700; drop once the AUR PKGBUILD fixes it
+  if [ -d /opt/rambox ]; then sudo chmod 755 /opt/rambox; fi
   xargs -r -L1 flatpak install -y         < flatpak.txt
   xargs -r -L1 sudo snap install          < snap.txt
 }
