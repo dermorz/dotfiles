@@ -293,6 +293,10 @@ bindsym $mod+9 exec swaylock -c 000000
 # Export session env to systemd/D-Bus so xdg-desktop-portal{,-wlr,-gtk} work
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
 
+# Dark mode (libadwaita/portal + GTK3)
+exec gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+exec gsettings set org.gnome.desktop.interface gtk-theme Adapta-Nokto-Eta-Maia
+
 # Autostart applications (Wayland-compatible ones)
 exec element-desktop
 exec signal-desktop
