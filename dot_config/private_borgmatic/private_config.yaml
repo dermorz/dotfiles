@@ -1,0 +1,65 @@
+source_directories:
+    - '~'
+
+repositories:
+    - path: ssh://gn6n5m82@gn6n5m82.repo.borgbase.com/./repo
+      label: "popeli (T14) on BorgBase"
+
+# New prefix so prune never touches the pre-Manjaro popeli-<iso> archives.
+archive_name_format: '{hostname}-manjaro-{now:%Y-%m-%d-%H%M%S}'
+match_archives: 'sh:{hostname}-manjaro-*'
+
+# Skip dirs with a CACHEDIR.TAG, and anything you mark with an empty .nobackup file.
+exclude_caches: true
+exclude_if_present:
+    - .nobackup
+
+# Wine prefixes: skip the game installs, keep the Windows user profile (configs, offline saves).
+# First match wins.
+patterns:
+    - "+ sh:home/dermorz/Games/*/drive_c/users/**"
+    - "- sh:home/dermorz/Games/**"
+
+exclude_patterns:
+    - '*.pyc'
+    - ~/.cache
+    - ~/*/.cache
+    - ~/Restore
+    - ~/go/pkg
+    - ~/go/bin
+    - ~/.npm
+    - ~/.bun
+    - ~/.cargo/registry
+    - ~/anaconda3
+    - ~/.conda
+    - ~/.local/share/containers
+    - ~/.local/share/pipx
+    - ~/.local/share/pnpm
+    - ~/.local/share/Steam
+    - ~/.local/share/lutris
+    - ~/.local/share/umu
+    - ~/.local/share/Trash
+    - ~/.steam
+    - ~/.var/app/*/cache
+    - ~/.config/*/Cache
+    - ~/.config/*/Code Cache
+    - ~/.config/*/GPUCache
+    - ~/.config/*/Service Worker/CacheStorage
+    - '**/node_modules'
+    - '**/.devenv'
+    - '**/.direnv'
+    - ~/.kube/cache
+
+compression: auto,zstd
+encryption_passcommand: gopass show -o borgbase-popeli
+
+retries: 5
+retry_wait: 5
+
+keep_daily: 3
+keep_weekly: 4
+keep_monthly: 12
+
+checks:
+    - name: repository
+      frequency: 4 weeks
