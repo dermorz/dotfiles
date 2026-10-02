@@ -38,6 +38,7 @@ bindsym $mod+Shift+q kill
 
 # Notifications
 bindsym $mod+backspace exec swaync-client --close-latest -sw
+bindsym $mod+shift+backspace exec swaync-client -a 0 -sw
 bindsym $mod+n exec swaync-client -t
 
 # start program launcher (using rofi for Wayland)
