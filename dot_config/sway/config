@@ -301,11 +301,12 @@ exec gsettings set org.gnome.desktop.interface gtk-theme Adapta-Nokto-Eta-Maia
 # Autostart applications (Wayland-compatible ones)
 exec element-desktop
 exec signal-desktop
-exec rambox
+exec com.rambox.app
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # exec swaybg -o '*' -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png
 exec nm-applet
 exec xfce4-power-manager
+exec swayidle -w before-sleep "swaylock -f -c 000000"
 exec pamac-tray
 # clipit may work on Wayland, but try without first
 exec blueman-applet
