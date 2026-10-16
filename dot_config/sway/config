@@ -188,7 +188,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Assign apps to specific workspaces
-assign [app_id="element"] workspace $ws1
+assign [app_id="(?i)^(element|discord)$"] workspace $ws1
+for_window [app_id="(?i)^(element|discord)$"] layout stacking
+no_focus [app_id="discord"]
 assign [app_id="signal"] workspace $ws5
 assign [app_id="rambox"] workspace $ws5
 
@@ -299,6 +301,7 @@ exec gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 exec gsettings set org.gnome.desktop.interface gtk-theme Adapta-Nokto-Eta-Maia
 
 # Autostart applications (Wayland-compatible ones)
+exec discord
 exec element-desktop
 exec signal-desktop
 exec rambox
