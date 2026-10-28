@@ -243,8 +243,8 @@ set $mode_system [l] Lock [e] Logout (Exit) [s] Suspend [h] Hibernate [r] Reboot
 mode "$mode_system" {
         bindsym l exec $locker, mode "default" 
         bindsym e exec swaymsg exit, mode "default"
-        bindsym s exec $locker && systemctl suspend, mode "default"
-        bindsym h exec $locker && systemctl hibernate, mode "default"
+        bindsym s exec systemctl suspend-then-hibernate, mode "default"
+        bindsym h exec systemctl hibernate, mode "default"
         bindsym r exec systemctl reboot, mode "default"
         bindsym Shift+s exec systemctl poweroff -i, mode "default"
 
