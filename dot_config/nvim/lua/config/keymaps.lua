@@ -11,6 +11,16 @@ vim.api.nvim_create_user_command('CheckGTKSupport', function()
   end
 end, { desc = 'Check GTK CSS support status' })
 
+-- Soft wrapping for prose (used by aerc and qutebrowser editor commands)
+vim.api.nvim_create_user_command('SoftWrap', function()
+  vim.wo.wrap = true
+  vim.wo.linebreak = true
+  vim.wo.showbreak = '+++'
+  for _, key in ipairs({ 'j', 'k', '0', '$' }) do
+    vim.keymap.set('', key, 'g' .. key, { buffer = true })
+  end
+end, { desc = 'Activate smart softwrapping of text' })
+
 -- Key mapping to check GTK CSS support
 vim.keymap.set('n', '<leader>cg', ':CheckGTKSupport<CR>', { desc = 'Check GTK CSS support' })
 
